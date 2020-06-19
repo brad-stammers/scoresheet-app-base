@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ball no:</strong>
+  <%= @ball.ball_no %>
+</p>
+
+<p>
+  <strong>Striker:</strong>
+  <%= @ball.striker %>
+</p>
+
+<p>
+  <strong>Non striker:</strong>
+  <%= @ball.non_striker %>
+</p>
+
+<p>
+  <strong>Runs:</strong>
+  <%= @ball.runs %>
+</p>
+
+<p>
+  <strong>Wide:</strong>
+  <%= @ball.wide %>
+</p>
+
+<p>
+  <strong>No ball:</strong>
+  <%= @ball.no_ball %>
+</p>
+
+<p>
+  <strong>Bye:</strong>
+  <%= @ball.bye %>
+</p>
+
+<p>
+  <strong>Leg bye:</strong>
+  <%= @ball.leg_bye %>
+</p>
+
+<p>
+  <strong>Wicket:</strong>
+  <%= @ball.wicket %>
+</p>
+
+<p>
+  <strong>How out:</strong>
+  <%= @ball.how_out %>
+</p>
+
+<p>
+  <strong>Fields:</strong>
+  <%= @ball.fields %>
+</p>
+
+<p>
+  <strong>Batter out:</strong>
+  <%= @ball.batter_out %>
+</p>
+
+<p>
+  <strong>Over:</strong>
+  <%= @ball.over_id %>
+</p>
+
+<%= link_to 'Edit', edit_ball_path(@ball) %> |
+<%= link_to 'Back', balls_path %>

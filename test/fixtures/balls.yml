@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ball_no: 1
+  striker: MyString
+  non_striker: MyString
+  runs: 1
+  wide: false
+  no_ball: false
+  bye: false
+  leg_bye: false
+  wicket: false
+  how_out: MyString
+  fields: MyString
+  batter_out: MyString
+  over: one
+
+two:
+  ball_no: 1
+  striker: MyString
+  non_striker: MyString
+  runs: 1
+  wide: false
+  no_ball: false
+  bye: false
+  leg_bye: false
+  wicket: false
+  how_out: MyString
+  fields: MyString
+  batter_out: MyString
+  over: two

@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Home:</strong>
+  <%= @inning.home %>
+</p>
+
+<p>
+  <strong>Away:</strong>
+  <%= @inning.away %>
+</p>
+
+<p>
+  <strong>Ground:</strong>
+  <%= @inning.ground %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @inning.start_date %>
+</p>
+
+<p>
+  <strong>End date:</strong>
+  <%= @inning.end_date %>
+</p>
+
+<p>
+  <strong>Compeition:</strong>
+  <%= @inning.compeition %>
+</p>
+
+<p>
+  <strong>Round:</strong>
+  <%= @inning.round %>
+</p>
+
+<p>
+  <strong>Umpire 1:</strong>
+  <%= @inning.umpire_1 %>
+</p>
+
+<p>
+  <strong>Umpire 2:</strong>
+  <%= @inning.umpire_2 %>
+</p>
+
+<p>
+  <strong>Batting team:</strong>
+  <%= @inning.batting_team %>
+</p>
+
+<p>
+  <strong>Bowling team:</strong>
+  <%= @inning.bowling_team %>
+</p>
+
+<p>
+  <strong>Inning no:</strong>
+  <%= @inning.inning_no %>
+</p>
+
+<%= link_to 'Edit', edit_inning_path(@inning) %> |
+<%= link_to 'Back', innings_path %>

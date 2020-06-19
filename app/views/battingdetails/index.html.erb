@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Battingdetails</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Batting team</th>
+      <th>Overs</th>
+      <th>Runs</th>
+      <th>Wickets</th>
+      <th>Byes</th>
+      <th>Leg byes</th>
+      <th>Inning</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @battingdetails.each do |battingdetail| %>
+      <tr>
+        <td><%= battingdetail.batting_team %></td>
+        <td><%= battingdetail.overs %></td>
+        <td><%= battingdetail.runs %></td>
+        <td><%= battingdetail.wickets %></td>
+        <td><%= battingdetail.byes %></td>
+        <td><%= battingdetail.leg_byes %></td>
+        <td><%= battingdetail.inning_id %></td>
+        <td><%= link_to 'Show', battingdetail %></td>
+        <td><%= link_to 'Edit', edit_battingdetail_path(battingdetail) %></td>
+        <td><%= link_to 'Destroy', battingdetail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Battingdetail', new_battingdetail_path %>

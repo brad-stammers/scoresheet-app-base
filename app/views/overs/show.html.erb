@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Over no:</strong>
+  <%= @over.over_no %>
+</p>
+
+<p>
+  <strong>Bowler:</strong>
+  <%= @over.bowler %>
+</p>
+
+<p>
+  <strong>Runs:</strong>
+  <%= @over.runs %>
+</p>
+
+<p>
+  <strong>Wickets:</strong>
+  <%= @over.wickets %>
+</p>
+
+<p>
+  <strong>Wides:</strong>
+  <%= @over.wides %>
+</p>
+
+<p>
+  <strong>No balls:</strong>
+  <%= @over.no_balls %>
+</p>
+
+<p>
+  <strong>Byes:</strong>
+  <%= @over.byes %>
+</p>
+
+<p>
+  <strong>Leg byes:</strong>
+  <%= @over.leg_byes %>
+</p>
+
+<p>
+  <strong>Inning:</strong>
+  <%= @over.inning_id %>
+</p>
+
+<%= link_to 'Edit', edit_over_path(@over) %> |
+<%= link_to 'Back', overs_path %>

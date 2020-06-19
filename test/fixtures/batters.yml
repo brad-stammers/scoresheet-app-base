@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  history: MyString
+  balls_faced: 1
+  zero: 1
+  one: 1
+  two: 1
+  three: 1
+  four: 1
+  five: 1
+  six: 1
+  how_out: MyString
+  bowler: MyString
+  fielder: MyString
+  runs: 1
+  battingdetail: one
+
+two:
+  name: MyString
+  history: MyString
+  balls_faced: 1
+  zero: 1
+  one: 1
+  two: 1
+  three: 1
+  four: 1
+  five: 1
+  six: 1
+  how_out: MyString
+  bowler: MyString
+  fielder: MyString
+  runs: 1
+  battingdetail: two

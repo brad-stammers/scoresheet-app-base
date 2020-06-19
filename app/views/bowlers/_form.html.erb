@@ -1,0 +1,57 @@
+<%= form_with(model: bowler, local: true) do |form| %>
+  <% if bowler.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(bowler.errors.count, "error") %> prohibited this bowler from being saved:</h2>
+
+      <ul>
+        <% bowler.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :overs %>
+    <%= form.text_field :overs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wickets %>
+    <%= form.number_field :wickets %>
+  </div>
+
+  <div class="field">
+    <%= form.label :maidens %>
+    <%= form.number_field :maidens %>
+  </div>
+
+  <div class="field">
+    <%= form.label :runs %>
+    <%= form.number_field :runs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wides %>
+    <%= form.number_field :wides %>
+  </div>
+
+  <div class="field">
+    <%= form.label :no_balls %>
+    <%= form.number_field :no_balls %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bowlingdetail_id %>
+    <%= form.text_field :bowlingdetail_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

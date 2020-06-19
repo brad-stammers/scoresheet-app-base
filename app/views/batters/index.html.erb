@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Batters</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>History</th>
+      <th>Balls faced</th>
+      <th>Zero</th>
+      <th>One</th>
+      <th>Two</th>
+      <th>Three</th>
+      <th>Four</th>
+      <th>Five</th>
+      <th>Six</th>
+      <th>How out</th>
+      <th>Bowler</th>
+      <th>Fielder</th>
+      <th>Runs</th>
+      <th>Battingdetail</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @batters.each do |batter| %>
+      <tr>
+        <td><%= batter.name %></td>
+        <td><%= batter.history %></td>
+        <td><%= batter.balls_faced %></td>
+        <td><%= batter.zero %></td>
+        <td><%= batter.one %></td>
+        <td><%= batter.two %></td>
+        <td><%= batter.three %></td>
+        <td><%= batter.four %></td>
+        <td><%= batter.five %></td>
+        <td><%= batter.six %></td>
+        <td><%= batter.how_out %></td>
+        <td><%= batter.bowler %></td>
+        <td><%= batter.fielder %></td>
+        <td><%= batter.runs %></td>
+        <td><%= batter.battingdetail_id %></td>
+        <td><%= link_to 'Show', batter %></td>
+        <td><%= link_to 'Edit', edit_batter_path(batter) %></td>
+        <td><%= link_to 'Destroy', batter, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Batter', new_batter_path %>

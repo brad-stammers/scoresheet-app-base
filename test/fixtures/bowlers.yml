@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  overs: MyString
+  wickets: 1
+  maidens: 1
+  runs: 1
+  wides: 1
+  no_balls: 1
+  bowlingdetail: one
+
+two:
+  name: MyString
+  overs: MyString
+  wickets: 1
+  maidens: 1
+  runs: 1
+  wides: 1
+  no_balls: 1
+  bowlingdetail: two

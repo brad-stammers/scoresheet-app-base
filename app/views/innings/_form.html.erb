@@ -1,0 +1,77 @@
+<%= form_with(model: inning, local: true) do |form| %>
+  <% if inning.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(inning.errors.count, "error") %> prohibited this inning from being saved:</h2>
+
+      <ul>
+        <% inning.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :home %>
+    <%= form.text_field :home %>
+  </div>
+
+  <div class="field">
+    <%= form.label :away %>
+    <%= form.text_field :away %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ground %>
+    <%= form.text_field :ground %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.text_field :start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :end_date %>
+    <%= form.text_field :end_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :compeition %>
+    <%= form.text_field :compeition %>
+  </div>
+
+  <div class="field">
+    <%= form.label :round %>
+    <%= form.text_field :round %>
+  </div>
+
+  <div class="field">
+    <%= form.label :umpire_1 %>
+    <%= form.text_field :umpire_1 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :umpire_2 %>
+    <%= form.text_field :umpire_2 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :batting_team %>
+    <%= form.text_field :batting_team %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bowling_team %>
+    <%= form.text_field :bowling_team %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inning_no %>
+    <%= form.number_field :inning_no %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

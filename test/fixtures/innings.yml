@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  home: MyString
+  away: MyString
+  ground: MyString
+  start_date: MyString
+  end_date: MyString
+  compeition: MyString
+  round: MyString
+  umpire_1: MyString
+  umpire_2: MyString
+  batting_team: MyString
+  bowling_team: MyString
+  inning_no: 1
+
+two:
+  home: MyString
+  away: MyString
+  ground: MyString
+  start_date: MyString
+  end_date: MyString
+  compeition: MyString
+  round: MyString
+  umpire_1: MyString
+  umpire_2: MyString
+  batting_team: MyString
+  bowling_team: MyString
+  inning_no: 1

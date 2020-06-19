@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Overs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Over no</th>
+      <th>Bowler</th>
+      <th>Runs</th>
+      <th>Wickets</th>
+      <th>Wides</th>
+      <th>No balls</th>
+      <th>Byes</th>
+      <th>Leg byes</th>
+      <th>Inning</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @overs.each do |over| %>
+      <tr>
+        <td><%= over.over_no %></td>
+        <td><%= over.bowler %></td>
+        <td><%= over.runs %></td>
+        <td><%= over.wickets %></td>
+        <td><%= over.wides %></td>
+        <td><%= over.no_balls %></td>
+        <td><%= over.byes %></td>
+        <td><%= over.leg_byes %></td>
+        <td><%= over.inning_id %></td>
+        <td><%= link_to 'Show', over %></td>
+        <td><%= link_to 'Edit', edit_over_path(over) %></td>
+        <td><%= link_to 'Destroy', over, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Over', new_over_path %>

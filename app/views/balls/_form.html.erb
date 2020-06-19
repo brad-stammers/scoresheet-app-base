@@ -1,0 +1,82 @@
+<%= form_with(model: ball, local: true) do |form| %>
+  <% if ball.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(ball.errors.count, "error") %> prohibited this ball from being saved:</h2>
+
+      <ul>
+        <% ball.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :ball_no %>
+    <%= form.number_field :ball_no %>
+  </div>
+
+  <div class="field">
+    <%= form.label :striker %>
+    <%= form.text_field :striker %>
+  </div>
+
+  <div class="field">
+    <%= form.label :non_striker %>
+    <%= form.text_field :non_striker %>
+  </div>
+
+  <div class="field">
+    <%= form.label :runs %>
+    <%= form.number_field :runs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wide %>
+    <%= form.check_box :wide %>
+  </div>
+
+  <div class="field">
+    <%= form.label :no_ball %>
+    <%= form.check_box :no_ball %>
+  </div>
+
+  <div class="field">
+    <%= form.label :bye %>
+    <%= form.check_box :bye %>
+  </div>
+
+  <div class="field">
+    <%= form.label :leg_bye %>
+    <%= form.check_box :leg_bye %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wicket %>
+    <%= form.check_box :wicket %>
+  </div>
+
+  <div class="field">
+    <%= form.label :how_out %>
+    <%= form.text_field :how_out %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fields %>
+    <%= form.text_field :fields %>
+  </div>
+
+  <div class="field">
+    <%= form.label :batter_out %>
+    <%= form.text_field :batter_out %>
+  </div>
+
+  <div class="field">
+    <%= form.label :over_id %>
+    <%= form.text_field :over_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

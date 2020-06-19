@@ -1,0 +1,52 @@
+<%= form_with(model: battingdetail, local: true) do |form| %>
+  <% if battingdetail.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(battingdetail.errors.count, "error") %> prohibited this battingdetail from being saved:</h2>
+
+      <ul>
+        <% battingdetail.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :batting_team %>
+    <%= form.text_field :batting_team %>
+  </div>
+
+  <div class="field">
+    <%= form.label :overs %>
+    <%= form.text_field :overs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :runs %>
+    <%= form.number_field :runs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :wickets %>
+    <%= form.number_field :wickets %>
+  </div>
+
+  <div class="field">
+    <%= form.label :byes %>
+    <%= form.number_field :byes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :leg_byes %>
+    <%= form.number_field :leg_byes %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inning_id %>
+    <%= form.text_field :inning_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
